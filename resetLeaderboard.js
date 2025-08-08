@@ -4,7 +4,7 @@ const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT_KEY);
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://your-project-id.firebaseio.com"  // <- CHANGE THIS
+  databaseURL: "https://starx-network-default-rtdb.firebaseio.com"  // <- CHANGE THIS
 });
 
 const db = admin.database();
